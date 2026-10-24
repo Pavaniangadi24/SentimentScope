@@ -1,0 +1,68 @@
+{
+  "accuracy": 0.8073,
+  "precision": 0.784,
+  "recall": 0.8581,
+  "f1": 0.8194,
+  "total_samples": 872,
+  "confusion_matrix": {
+    "matrix": [
+      [
+        323,
+        105
+      ],
+      [
+        63,
+        381
+      ]
+    ],
+    "true_negatives": 323,
+    "false_positives": 105,
+    "false_negatives": 63,
+    "true_positives": 381,
+    "labels": [
+      "Negative (0)",
+      "Positive (1)"
+    ]
+  },
+  "classification_report": {
+    "0": {
+      "precision": 0.8367875647668394,
+      "recall": 0.7546728971962616,
+      "f1-score": 0.7936117936117936,
+      "support": 428.0
+    },
+    "1": {
+      "precision": 0.7839506172839507,
+      "recall": 0.8581081081081081,
+      "f1-score": 0.8193548387096774,
+      "support": 444.0
+    },
+    "accuracy": 0.8073394495412844,
+    "macro avg": {
+      "precision": 0.810369091025395,
+      "recall": 0.8063905026521849,
+      "f1-score": 0.8064833161607354,
+      "support": 872.0
+    },
+    "weighted avg": {
+      "precision": 0.8098843483879372,
+      "recall": 0.8073394495412844,
+      "f1-score": 0.8067194908864042,
+      "support": 872.0
+    }
+  },
+  "roc_auc": 0.9087,
+  "model_name": "TF-IDF + Logistic Regression",
+  "evaluation_dataset": "SST-2 Validation Split (872 labelled sentences)",
+  "hyperparameters": {
+    "ngram_range": [
+      1,
+      2
+    ],
+    "max_features": 30000,
+    "sublinear_tf": true,
+    "min_df": 2,
+    "C": 1.0,
+    "random_state": 42
+  }
+}

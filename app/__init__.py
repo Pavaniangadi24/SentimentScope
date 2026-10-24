@@ -1,0 +1,1 @@
+"""SentimentScope Streamlit Application package."""

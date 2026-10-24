@@ -1,13 +1,45 @@
+# Python & Virtual Environments
 .venv/
 venv/
+ENV/
+env/
 __pycache__/
 *.py[cod]
+*$py.class
+*.so
+.Python
+
+# Testing & Cache
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+
+# Environment Variables & Secrets
 .env
 .env.*
 !.env.example
-.pytest_cache/
 .streamlit/secrets.toml
+
+# Data files (Datasets)
 data/raw/
 data/processed/
+data/*.csv
+data/*.parquet
+
+# Model artifacts & Checkpoints
 models/checkpoints/
-models/transformer/
+models/transformer/*
+!models/transformer/transformer_metrics.json
+models/baseline/*.joblib
+models/baseline/*.pkl
+*.joblib
+*.pkl
+*.pt
+*.bin
+
+# OS & IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
