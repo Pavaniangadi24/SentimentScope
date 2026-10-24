@@ -1,0 +1,13 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+.pytest_cache/
+.streamlit/secrets.toml
+data/raw/
+data/processed/
+models/checkpoints/
+models/transformer/
